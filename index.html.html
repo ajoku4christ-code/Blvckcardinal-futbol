@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BLVCKCARDINAL Football | One stage. One dream. One champion.</title>
+<meta name="description" content="BLVCKCARDINAL Football is an annual grassroots five-a-side championship in Lagos. Competitive football, entertainment, professional media coverage, talent discovery and a ₦4,000,000 prize pool.">
+<meta name="theme-color" content="#0A0908">
+<meta property="og:title" content="BLVCKCARDINAL Football">
+<meta property="og:description" content="One stage. One dream. One champion. The annual grassroots five-a-side championship in Lagos. Grand Final on October 1st.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Analytics: add your IDs in CONFIG (bottom of page). Scripts load only when IDs are set. -->
+
+<style>
+:root{
+  --void:#0A0908; --char:#17140F; --card:#1D1812;
+  --gold:#C9A227; --gold-hi:#E6C34F;
+  --cardinal:#9C2437; --cardinal-deep:#6E1423;
+  --bone:#EDE8DE; --mute:#A89F8C;
+  --line:rgba(201,162,39,.30); --hair:rgba(237,232,222,.14);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --wrap:min(1120px, 100% - 40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-size:1rem;line-height:1.6;padding-bottom:76px;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);margin:0;line-height:1.05;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+.sec{padding:clamp(64px,10vw,120px) 0;scroll-margin-top:64px}
+.sec.alt{background:var(--char)}
+.sec h2{font-size:clamp(2rem,6.4vw,3.7rem);font-weight:800;max-width:18ch}
+.lede{color:var(--mute);font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:56ch;margin-top:20px}
+.head{margin-bottom:clamp(36px,6vw,64px)}
+:focus-visible{outline:2px solid var(--bone);outline-offset:3px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:3px;border:1px solid var(--gold);background:var(--gold);color:var(--void);font:600 1rem var(--sans);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--gold-hi)}
+.btn.ghost{background:transparent;color:var(--gold-hi)}
+.btn.ghost:hover{background:rgba(201,162,39,.12)}
+.btn.small{min-height:40px;padding:8px 16px;font-size:.92rem}
+
+/* Header */
+.top{position:sticky;top:0;z-index:50;background:rgba(10,9,8,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-weight:800;letter-spacing:.02em;font-size:1.02rem}
+.brand small{font-family:var(--sans);font-weight:500;color:var(--gold-hi);letter-spacing:.14em;font-size:.68rem;display:block;line-height:1}
+.brand span{display:block;line-height:1.1}
+.menu-btn{background:none;border:1px solid var(--hair);color:var(--bone);width:44px;height:44px;border-radius:3px;display:grid;place-items:center;cursor:pointer}
+.nav{display:none;position:absolute;left:0;right:0;top:64px;background:var(--void);border-bottom:1px solid var(--line);padding:8px 20px 20px}
+.nav.open{display:block}
+.nav a{display:block;padding:14px 0;border-bottom:1px solid var(--hair);text-decoration:none;font-weight:500}
+.nav a.btn{margin-top:16px;border-bottom:1px solid var(--gold)}
+@media(min-width:960px){
+  .menu-btn{display:none}
+  .nav{display:flex;position:static;background:none;border:0;padding:0;gap:26px;align-items:center}
+  .nav a{border:0;padding:0;font-size:.95rem;color:var(--mute)}
+  .nav a:hover{color:var(--bone)}
+  .nav a.btn{margin:0;color:var(--void);padding:8px 18px;min-height:40px}
+  body{padding-bottom:0}
+}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:clamp(48px,9vw,110px) 0 clamp(56px,9vw,100px);border-bottom:1px solid var(--hair)}
+.pitch{position:absolute;right:-8%;bottom:-6%;width:min(980px,130%);opacity:.5;pointer-events:none}
+.pitch *{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:0}
+.pitch .spot{fill:var(--gold);stroke:none}
+@media(prefers-reduced-motion:no-preference){
+  .pitch *{animation:draw 2.6s ease-out both}
+  @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(2.9rem,12.5vw,8rem);font-weight:900;letter-spacing:-.035em;line-height:.9;font-variation-settings:"opsz" 144}
+.hero h1 span{display:block}
+.hero h1 .win{color:var(--gold)}
+.hero .sub{max-width:52ch;font-size:clamp(1.05rem,2.6vw,1.3rem);margin-top:28px;color:var(--bone)}
+.hero .sub b{color:var(--gold-hi);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.board{display:inline-grid;grid-template-columns:repeat(4,auto);margin-top:44px;border:1px solid var(--gold);background:rgba(10,9,8,.82);backdrop-filter:blur(4px)}
+.board div{padding:14px clamp(14px,4vw,30px);text-align:center;border-right:1px solid var(--line)}
+.board div:last-child{border-right:0}
+.board b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(1.9rem,7vw,3.4rem);line-height:1;font-variant-numeric:tabular-nums;color:var(--gold-hi)}
+.board span{font-size:.8rem;color:var(--mute)}
+.cap{margin-top:12px;color:var(--mute);font-size:.92rem}
+
+/* Promises */
+.promises{display:grid;gap:36px 56px;grid-template-columns:1fr}
+.promise{border-top:1px solid var(--gold);padding-top:22px}
+.promise svg{width:34px;height:34px;stroke:var(--gold-hi);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.promise h3{font-size:1.7rem;font-weight:800}
+.promise p{color:var(--mute);margin-top:10px;max-width:44ch}
+@media(min-width:760px){.promises{grid-template-columns:1fr 1fr}}
+
+/* Road + Grand final */
+.road-wrap{display:grid;gap:56px}
+@media(min-width:960px){.road-wrap{grid-template-columns:1fr 1fr;gap:80px;align-items:start}}
+.road{list-style:none;margin:0;padding:0}
+.road li{display:grid;grid-template-columns:48px 1fr;gap:18px;position:relative;padding-bottom:30px}
+.road li::before{content:"";position:absolute;left:23px;top:50px;bottom:2px;width:1px;background:var(--line)}
+.road li:last-child{padding-bottom:0}
+.road li:last-child::before{display:none}
+.road .n{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-weight:800;color:var(--gold-hi);background:var(--void)}
+.road li.final .n{background:var(--cardinal);border-color:var(--gold);color:var(--bone)}
+.road h3{font-size:1.35rem;font-weight:800}
+.road time{display:block;font-size:.85rem;color:var(--gold-hi);margin-top:2px}
+.road p{color:var(--mute);margin-top:6px}
+.note{color:var(--mute);font-size:.88rem;margin-top:28px}
+.finalday{background:linear-gradient(160deg,var(--cardinal-deep),#3b0a14);border:1px solid var(--gold);padding:clamp(26px,5vw,48px)}
+.finalday h3{font-size:clamp(1.8rem,5vw,2.7rem);font-weight:900}
+.finalday > p{margin-top:14px;color:#e6dccc;max-width:46ch}
+.finalday ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.finalday li{padding-left:22px;position:relative;font-weight:500}
+.finalday li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+
+/* Prize */
+.prizes{display:grid;gap:22px;max-width:760px}
+.prize{display:grid;gap:8px}
+.prize .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.prize h3{font-family:var(--sans);font-size:1rem;font-weight:500;letter-spacing:0}
+.prize strong{font-family:var(--serif);font-size:clamp(1.4rem,4vw,2rem);font-weight:800;color:var(--gold-hi)}
+.bar{height:10px;background:rgba(237,232,222,.08)}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-hi))}
+.prize small{color:var(--mute)}
+
+/* Two-column feature + form */
+.split{display:grid;gap:44px}
+@media(min-width:960px){.split{grid-template-columns:5fr 6fr;gap:80px;align-items:start}}
+.checks{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.checks li{padding-left:28px;position:relative}
+.checks li::before{content:"";position:absolute;left:2px;top:.45em;width:12px;height:7px;border-left:2px solid var(--gold-hi);border-bottom:2px solid var(--gold-hi);transform:rotate(-45deg)}
+.formbox{background:var(--card);border:1px solid var(--line);padding:clamp(22px,4vw,36px)}
+.formbox h3{font-size:1.6rem;font-weight:800;margin-bottom:20px}
+form{display:grid;gap:16px}
+.g2{display:grid;gap:16px}
+@media(min-width:560px){.g2{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:6px}
+.field label{font-size:.9rem;color:var(--mute);font-weight:500}
+input,select,textarea{font:inherit;font-size:16px;color:var(--bone);background:var(--void);border:1px solid rgba(237,232,222,.22);border-radius:3px;padding:12px 14px;min-height:48px;width:100%}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.92rem;color:var(--mute)}
+.consent input{width:20px;height:20px;min-height:0;margin-top:2px;accent-color:var(--gold);flex:none}
+.result{display:none;border:1px solid var(--gold);background:var(--void);padding:20px;margin-top:20px}
+.result.show{display:block}
+.result h4{margin:0 0 8px;font-family:var(--serif);font-size:1.25rem}
+.result pre{white-space:pre-wrap;word-break:break-word;font:inherit;font-size:.92rem;color:var(--mute);margin:0 0 16px}
+.result .actions{margin-top:0}
+.fine{font-size:.85rem;color:var(--mute)}
+
+/* Media */
+.content-list{display:grid;gap:0;margin-top:8px;border-top:1px solid var(--hair)}
+.content-list div{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--hair)}
+.content-list b{font-family:var(--serif);font-size:1.25rem;font-weight:800}
+.content-list span{color:var(--mute);text-align:right;max-width:30ch}
+@media(max-width:559px){.content-list div{flex-direction:column;gap:4px}.content-list span{text-align:left}}
+
+/* Arms */
+.arms{border-top:1px solid var(--gold)}
+.arm{display:grid;gap:8px;padding:26px 0;border-bottom:1px solid var(--hair)}
+@media(min-width:860px){.arm{grid-template-columns:1.1fr 1.6fr 1.3fr;gap:40px}}
+.arm h3{font-size:1.6rem;font-weight:800}
+.arm p{color:var(--mute)}
+.arm .earn{color:var(--bone)}
+.arm .earn em{display:block;font-style:normal;font-size:.82rem;color:var(--gold-hi)}
+.flywheel{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.flywheel li{counter-increment:s;display:flex;gap:16px;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--hair)}
+.flywheel li::before{content:counter(s);font-family:var(--serif);font-weight:800;color:var(--gold-hi);min-width:1.4em}
+.flywheel li:last-child{border:0}
+.sub-h{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;margin-bottom:24px}
+.platform-grid{display:grid;gap:56px;margin-top:64px}
+@media(min-width:960px){.platform-grid{grid-template-columns:1fr 1fr;gap:80px}}
+
+/* Expansion route */
+.route{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.route li{position:relative;padding:0 0 28px 40px}
+.route li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border:2px solid var(--gold);border-radius:50%;background:var(--void)}
+.route li::after{content:"";position:absolute;left:9px;top:28px;bottom:0;width:2px;background:var(--line)}
+.route li:last-child::after{display:none}
+.route li.now::before{background:var(--gold)}
+.route li.goal::before{background:var(--cardinal);border-color:var(--gold-hi)}
+.route h3{font-size:1.5rem;font-weight:800}
+.route p{color:var(--mute);font-size:.95rem}
+@media(min-width:860px){
+  .route{grid-template-columns:repeat(4,1fr);gap:24px}
+  .route li{padding:44px 0 0 0}
+  .route li::before{left:0;top:0}
+  .route li::after{left:24px;right:-24px;top:9px;bottom:auto;width:auto;height:2px}
+}
+
+/* Tickets */
+.tickets{display:grid;gap:22px}
+@media(min-width:960px){.tickets{grid-template-columns:1.25fr 1fr 1fr;align-items:stretch}}
+.ticket{position:relative;background:var(--card);border:1px solid var(--line);padding:30px 26px;display:flex;flex-direction:column;gap:16px}
+.ticket.feature{border-color:var(--gold);background:linear-gradient(180deg,#2a2114,var(--card) 60%)}
+.ticket h3{font-size:1.7rem;font-weight:800}
+.ticket .price{font-family:var(--serif);font-weight:900;font-size:clamp(2.2rem,5vw,3rem);color:var(--gold-hi);line-height:1}
+.ticket .slots{color:var(--mute);font-size:.9rem}
+.perf{position:relative;border-top:1px dashed var(--line);margin:4px -26px}
+.perf::before,.perf::after{content:"";position:absolute;top:-10px;width:20px;height:20px;border-radius:50%;background:var(--char)}
+.perf::before{left:-10px}.perf::after{right:-10px}
+.ticket ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.96rem}
+.ticket li{padding-left:20px;position:relative}
+.ticket li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+.ticket .btn{margin-top:auto}
+.ticket .best{color:var(--mute);font-size:.92rem}
+.founding{display:grid;gap:28px;margin-bottom:56px}
+@media(min-width:960px){.founding{grid-template-columns:1fr 1fr;gap:80px}}
+.terms{border-left:2px solid var(--gold);padding-left:20px;color:var(--mute)}
+.terms b{color:var(--bone)}
+.partners-extra{display:grid;gap:56px;margin-top:72px}
+@media(min-width:960px){.partners-extra{grid-template-columns:1fr 1fr;gap:80px}}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.tags span{border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.95rem}
+.metrics{display:grid;gap:0;grid-template-columns:1fr 1fr;border-top:1px solid var(--hair)}
+.metrics div{padding:16px 0;border-bottom:1px solid var(--hair);font-weight:500}
+.metrics div:nth-child(odd){padding-right:12px}
+
+/* FAQ */
+.faq{max-width:820px}
+details{border-bottom:1px solid var(--hair)}
+details:first-child{border-top:1px solid var(--hair)}
+summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;font-family:var(--serif);font-weight:800;font-size:1.25rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--gold-hi);font-family:var(--sans);font-weight:400}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--mute);padding:0 0 22px;max-width:62ch}
+
+/* Contact + footer */
+.contact{background:var(--cardinal-deep);border-top:1px solid var(--gold)}
+.contact h2{max-width:14ch}
+.contact .lede{color:#e6dccc}
+.contact .btn{background:var(--bone);border-color:var(--bone)}
+.contact .btn.ghost{background:transparent;color:var(--bone);border-color:var(--bone)}
+footer{padding:48px 0;border-top:1px solid var(--hair);color:var(--mute);font-size:.92rem}
+footer .wrap{display:grid;gap:20px}
+@media(min-width:760px){footer .wrap{grid-template-columns:1fr auto;align-items:end}}
+footer a{color:var(--bone)}
+.flinks{display:flex;gap:20px;flex-wrap:wrap}
+
+
+/* Contact channels */
+.chans{display:grid;gap:12px;margin-top:32px;max-width:900px}
+@media(min-width:760px){.chans{grid-template-columns:repeat(3,1fr)}}
+.chan{display:flex;align-items:center;gap:16px;min-height:72px;padding:14px 20px;background:var(--bone);color:var(--void);border-radius:3px;text-decoration:none;transition:background .2s}
+.chan:hover{background:#fff}
+.chan svg{width:34px;height:34px;flex:none;stroke:var(--cardinal-deep);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.chan svg .fill{fill:var(--cardinal-deep);stroke:none}
+.chan b{display:block;font-family:var(--serif);font-size:1.15rem;font-weight:800;line-height:1.1}
+.chan small{display:block;font-size:.9rem;color:#4a4237;word-break:break-all}
+.ficon{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid var(--hair);border-radius:3px}
+.ficon svg{width:22px;height:22px;stroke:var(--gold-hi);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ficon svg .fill{fill:var(--gold-hi);stroke:none}
+.ficon:hover{border-color:var(--gold)}
+.flinks{align-items:center}
+
+/* Mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(10,9,8,.96);border-top:1px solid var(--line)}
+.mbar .btn{min-height:46px;padding:8px 10px;font-size:.95rem}
+@media(min-width:960px){.mbar{display:none}}
+
+@media print{
+  body.print-proposal header.top,body.print-proposal .mbar,body.print-proposal footer,
+  body.print-proposal main > section:not(#partners),body.print-proposal .noprint{display:none!important}
+  body.print-proposal{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body.print-proposal #partners{padding:24px 0}
+  body.print-proposal .ticket{break-inside:avoid}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BLVCKCARDINAL Football home">
+      <svg width="32" height="34" viewBox="0 0 32 34" aria-hidden="true"><path d="M16 2 29 7v10c0 7-6 12-13 15C9 29 3 24 3 17V7z" fill="#0A0908" stroke="#C9A227" stroke-width="1.6"/><text x="16" y="21.5" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="900" font-size="12" fill="#E6C34F">BC</text></svg>
+      <span>BLVCKCARDINAL<small>FOOTBALL</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#championship">Championship</a>
+      <a href="#road">Road to the final</a>
+      <a href="#teams">Teams</a>
+      <a href="#players">Players</a>
+      <a href="#partners">Partners</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#teams">Register your team</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <svg class="pitch" viewBox="0 0 600 380" aria-hidden="true">
+    <rect x="10" y="10" width="580" height="360" pathLength="1"/>
+    <line x1="300" y1="10" x2="300" y2="370" pathLength="1"/>
+    <circle cx="300" cy="190" r="52" pathLength="1"/>
+    <path d="M10 120H62V260H10" pathLength="1"/>
+    <path d="M590 120H538V260H590" pathLength="1"/>
+    <circle class="spot" cx="300" cy="190" r="3"/>
+    <circle class="spot" cx="96" cy="190" r="3"/>
+    <circle class="spot" cx="504" cy="190" r="3"/>
+  </svg>
+  <div class="wrap">
+    <h1 id="h1"><span>One stage.</span><span>One dream.</span><span class="win">One champion.</span></h1>
+    <p class="sub">BLVCKCARDINAL Football is an annual grassroots five-a-side championship in Lagos. Every September, teams compete for a <b>₦4,000,000 prize pool</b>, and the champion is crowned on October 1st.</p>
+    <div class="actions">
+      <a class="btn" href="#teams">Register your team</a>
+      <a class="btn ghost" href="#partners">Partner with us</a>
+    </div>
+    <div class="board" role="timer" aria-label="Countdown to the Grand Final">
+      <div><b id="cd-d">00</b><span>days</span></div>
+      <div><b id="cd-h">00</b><span>hours</span></div>
+      <div><b id="cd-m">00</b><span>minutes</span></div>
+      <div><b id="cd-s">00</b><span>seconds</span></div>
+    </div>
+    <p class="cap" id="cdCap">Until the Grand Final</p>
+  </div>
+</section>
+
+<!-- CHAMPIONSHIP -->
+<section class="sec" id="championship">
+  <div class="wrap">
+    <div class="head">
+      <h2>A serious tournament. A proper show.</h2>
+      <p class="lede">BLVCKCARDINAL brings competitive football, entertainment, professional media coverage, talent discovery and financial rewards into one annual championship that Lagos looks forward to.</p>
+    </div>
+    <div class="promises">
+      <article class="promise">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M9 20h6M10 17h4"/></svg>
+        <h3>Competition</h3>
+        <p>Teams qualify, enter a draw and play through a structured tournament with real stakes. Every result counts.</p>
+      </article>
+      <article class="promise">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5 16 12l-6 3.5z"/></svg>
+        <h3>Entertainment</h3>
+        <p>Music, commentary, rivalries and supporters in the stands. Every match is an experience, not just a fixture.</p>
+      </article>
+      <article class="promise">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg>
+        <h3>Exposure</h3>
+        <p>We record and publish matches, interviews and highlights, so grassroots talent gets seen far beyond the pitch.</p>
+      </article>
+      <article class="promise">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l6-6 4 3 6-9M15 6h5v5"/></svg>
+        <h3>Opportunity</h3>
+        <p>Exceptional players are connected with legitimate football development pathways through clubs and academies.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ROAD TO THE FINAL -->
+<section class="sec alt" id="road">
+  <div class="wrap">
+    <div class="head">
+      <h2>The road to October 1st</h2>
+      <p class="lede">Players prepare for months. Teams fight for qualification. Supporters wait for the draw. Then everything builds to one day.</p>
+    </div>
+    <div class="road-wrap">
+      <div>
+        <ol class="road">
+          <li><span class="n">1</span><div><h3>Registration opens</h3><time>Early in the year</time><p>Teams submit details and secure a place.</p></div></li>
+          <li><span class="n">2</span><div><h3>Qualifiers</h3><time>Mid-year</time><p>Teams compete for a spot in the championship.</p></div></li>
+          <li><span class="n">3</span><div><h3>The draw</h3><time>Before September</time><p>Groups are revealed and rivalries are set, live on our channels.</p></div></li>
+          <li><span class="n">4</span><div><h3>Group stage</h3><time>September</time><p>Every match recorded. Goals and highlights posted daily.</p></div></li>
+          <li><span class="n">5</span><div><h3>Knockout rounds</h3><time>September</time><p>The field narrows. The pressure rises.</p></div></li>
+          <li class="final"><span class="n">&#9733;</span><div><h3>Grand Final</h3><time>October 1st</time><p>The champion is crowned.</p></div></li>
+        </ol>
+        <p class="note">Indicative schedule. Confirmed dates are published when registration opens.</p>
+      </div>
+      <div class="finalday">
+        <h3>Grand Final day is the biggest day of the competition.</h3>
+        <p>Not just a football match. A complete championship celebration for players, supporters and partners.</p>
+        <ul>
+          <li>Live entertainment</li>
+          <li>Partner showcases</li>
+          <li>Awards</li>
+          <li>Scouts and clubs</li>
+          <li>Supporters</li>
+          <li>Trophy presentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIZE -->
+<section class="sec" id="prize">
+  <div class="wrap">
+    <div class="head">
+      <h2>₦4,000,000 on the line</h2>
+      <p class="lede">A prize pool built to make qualification worth chasing, with rewards for the best individuals as well as the best teams.</p>
+    </div>
+    <div class="prizes">
+      <div class="prize"><div class="row"><h3>Champions</h3><strong>₦2,000,000</strong></div><div class="bar"><i style="width:100%"></i></div></div>
+      <div class="prize"><div class="row"><h3>Runners-up</h3><strong>₦1,000,000</strong></div><div class="bar"><i style="width:50%"></i></div></div>
+      <div class="prize"><div class="row"><h3>Third place</h3><strong>₦500,000</strong></div><div class="bar"><i style="width:25%"></i></div></div>
+      <div class="prize"><div class="row"><h3>Best player</h3><strong>₦250,000</strong></div><div class="bar"><i style="width:12.5%"></i></div></div>
+      <div class="prize"><div class="row"><h3>Top scorer</h3><strong>₦250,000</strong></div><div class="bar"><i style="width:12.5%"></i></div></div>
+    </div>
+    <p class="note">Final prize breakdown is confirmed in the tournament rules.</p>
+  </div>
+</section>
+
+<!-- TEAMS -->
+<section class="sec alt" id="teams">
+  <div class="wrap split">
+    <div>
+      <h2>Register your team</h2>
+      <p class="lede">Places are limited. Send your team details and we will confirm your slot and share the tournament rules.</p>
+      <ul class="checks">
+        <li>A structured tournament with qualifiers, a draw and a Grand Final</li>
+        <li>Every match recorded, with highlights shared online</li>
+        <li>A shot at the ₦4,000,000 prize pool</li>
+        <li>Visibility with scouts, clubs and sponsors</li>
+      </ul>
+    </div>
+    <div class="formbox">
+      <h3>Team registration</h3>
+      <form id="teamForm" novalidate>
+        <div class="g2">
+          <div class="field"><label for="t-team">Team name</label><input id="t-team" name="team" required autocomplete="organization"></div>
+          <div class="field"><label for="t-area">Area in Lagos</label><input id="t-area" name="area" required placeholder="e.g. Surulere"></div>
+        </div>
+        <div class="g2">
+          <div class="field"><label for="t-cap">Captain's full name</label><input id="t-cap" name="captain" required autocomplete="name"></div>
+          <div class="field"><label for="t-phone">Captain's WhatsApp number</label><input id="t-phone" name="phone" type="tel" inputmode="tel" required placeholder="0803 000 0000" pattern="^(\+?234|0)[789][01]\d{8}$" title="Enter a valid Nigerian phone number, e.g. 08030000000" autocomplete="tel"></div>
+        </div>
+        <div class="g2">
+          <div class="field"><label for="t-size">Squad size</label>
+            <select id="t-size" name="size" required><option value="">Select</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+          <div class="field"><label for="t-kit">Kit colours</label><input id="t-kit" name="kit" placeholder="e.g. Black and gold"></div>
+        </div>
+        <div class="field"><label for="t-email">Email (optional)</label><input id="t-email" name="email" type="email" autocomplete="email"></div>
+        <label class="consent"><input type="checkbox" name="agree" required> <span>I confirm I am authorised to register this team, and every player is 18 or older, or has a parent or guardian's permission to play.</span></label>
+        <button class="btn" type="submit">Submit registration</button>
+      </form>
+      <div class="result" id="teamOut" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYERS -->
+<section class="sec" id="players">
+  <div class="wrap split">
+    <div>
+      <h2>Get seen. Get connected.</h2>
+      <p class="lede">Every match is recorded. Create a player profile and join the BLVCKCARDINAL Talent Network, our link between grassroots players and legitimate development pathways.</p>
+      <p class="terms" style="margin-top:28px"><b>Our promise to players.</b> Pathways are introductions to clubs and academies. We cannot guarantee trials or signings, and we will never ask you to pay for an introduction.</p>
+    </div>
+    <div class="formbox">
+      <h3>Player profile</h3>
+      <form id="playerForm" novalidate>
+        <div class="g2">
+          <div class="field"><label for="p-name">Full name</label><input id="p-name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="p-age">Age</label><input id="p-age" name="age" type="number" min="12" max="45" inputmode="numeric" required></div>
+        </div>
+        <div class="g2">
+          <div class="field"><label for="p-pos">Position</label>
+            <select id="p-pos" name="position" required><option value="">Select</option><option>Goalkeeper</option><option>Defender</option><option>Midfielder</option><option>Forward</option></select></div>
+          <div class="field"><label for="p-area">Area in Lagos</label><input id="p-area" name="area" required></div>
+        </div>
+        <div class="g2">
+          <div class="field"><label for="p-team">Current team (optional)</label><input id="p-team" name="team"></div>
+          <div class="field"><label for="p-phone">WhatsApp number</label><input id="p-phone" name="phone" type="tel" inputmode="tel" required pattern="^(\+?234|0)[789][01]\d{8}$" title="Enter a valid Nigerian phone number" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="p-clip">Highlight video link (optional)</label><input id="p-clip" name="clip" type="url" placeholder="https://"></div>
+        <label class="consent"><input type="checkbox" name="agree" required> <span>I am 18 or older, or my parent or guardian has agreed to this profile being shared with clubs and academies.</span></label>
+        <button class="btn" type="submit">Submit profile</button>
+      </form>
+      <div class="result" id="playerOut" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section class="sec alt" id="media">
+  <div class="wrap split">
+    <div>
+      <h2>Every match becomes content.</h2>
+      <p class="lede">BLVCKCARDINAL Media records the championship from the first qualifier to the trophy lift, then turns it into football content that audiences follow and brands want to be part of.</p>
+      <div class="actions"><a class="btn ghost" href="#partners">Advertise with BLVCKCARDINAL Media</a></div>
+    </div>
+    <div class="content-list">
+      <div><b>Match highlights</b><span>Goals, saves and moments of the day</span></div>
+      <div><b>Interviews</b><span>Players, captains and supporters</span></div>
+      <div><b>The draw show</b><span>Groups, rivalries and predictions</span></div>
+      <div><b>Player profiles</b><span>Talent footage for clubs and scouts</span></div>
+      <div><b>Grand Final film</b><span>The full story of the championship</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section class="sec" id="platform">
+  <div class="wrap">
+    <div class="head">
+      <h2>One tournament. Three businesses.</h2>
+      <p class="lede">BLVCKCARDINAL does not depend on a single annual event. The championship feeds a media company and a talent network that work all year.</p>
+    </div>
+    <div class="arms">
+      <article class="arm"><h3>Football</h3><p>The championship itself: qualifiers, group stage, knockouts and the Grand Final.</p><p class="earn"><em>Earns from</em>Sponsorship, registration and tickets</p></article>
+      <article class="arm"><h3>Media</h3><p>Match coverage, highlights, interviews and branded content across digital channels.</p><p class="earn"><em>Earns from</em>Advertising, branded content and media partnerships</p></article>
+      <article class="arm"><h3>Talent Network</h3><p>Player profiles, footage and introductions to clubs and academies.</p><p class="earn"><em>Earns from</em>Club partnerships, recruitment services and development programmes</p></article>
+    </div>
+
+    <div class="platform-grid">
+      <div>
+        <h3 class="sub-h">How each edition makes the next one bigger</h3>
+        <ol class="flywheel">
+          <li>September brings the tournament.</li>
+          <li>Every match creates football content.</li>
+          <li>The content attracts viewers and sponsors.</li>
+          <li>The footage gives players visibility.</li>
+          <li>Clubs and academies want to work with the platform.</li>
+          <li>Those relationships make the next edition more valuable.</li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="sub-h">Lagos first. Then the nation.</h3>
+        <ul class="route">
+          <li class="now"><h3>Lagos</h3><p>The home edition. Where the championship is built.</p></li>
+          <li><h3>Abuja</h3><p>Regional qualifiers.</p></li>
+          <li><h3>Port Harcourt</h3><p>Regional qualifiers.</p></li>
+          <li class="goal"><h3>National Grand Championship</h3><p>Regional winners meet in one final.</p></li>
+        </ul>
+        <p class="note">Long-term vision. Expansion follows a successful Lagos edition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="sec alt" id="partners">
+  <div class="wrap">
+    <div class="head">
+      <h2>Back the championship.</h2>
+      <p class="lede">BLVCKCARDINAL is more than a football tournament. It is a grassroots football platform combining competition, entertainment, media exposure and talent development. Partners connect their brand with an exciting sporting experience and a community that cares about it.</p>
+    </div>
+
+    <div class="founding">
+      <div>
+        <h3 class="sub-h">Founding Partners Programme</h3>
+        <p style="color:var(--mute)">The first companies to back the inaugural edition become the founding commercial partners of the competition. Their brands become part of the tournament's history, and they get the first opportunity to renew for the following September.</p>
+      </div>
+      <div class="terms"><b>Clear terms.</b> Partnerships are agreed per edition. We do not offer permanent rights or unlimited category exclusivity. Every partner receives a written agreement, a confirmed benefits list and a payment schedule before anything is announced.</div>
+    </div>
+
+    <div class="tickets">
+      <article class="ticket feature">
+        <h3>Founding Title Partner</h3>
+        <div class="price">₦5,000,000</div>
+        <div class="slots">One partner only</div>
+        <div class="perf"></div>
+        <p class="best">For the brand that wants to be the face of the championship.</p>
+        <ul>
+          <li>Title association with the edition ("presented by")</li>
+          <li>Logo on the main stage, match backdrops, trophy podium and all digital creatives</li>
+          <li>Featured placement in the Grand Final film</li>
+          <li>Two branded content features with BLVCKCARDINAL Media</li>
+          <li>Activation space on Grand Final day</li>
+          <li>Post-event performance report</li>
+          <li>First right to renew for the next September</li>
+        </ul>
+        <a class="btn noprint" href="#sponsorForm" data-pkg="Founding Title Partner">Request the Title package</a>
+      </article>
+      <article class="ticket">
+        <h3>Founding Gold Partner</h3>
+        <div class="price">₦2,500,000</div>
+        <div class="slots">One partner only</div>
+        <div class="perf"></div>
+        <p class="best">For a brand that wants prominent visibility and an on-site presence.</p>
+        <ul>
+          <li>Official Gold Partner designation</li>
+          <li>Logo on pitchside boards and match-day graphics</li>
+          <li>Branded highlight segment</li>
+          <li>Activation space on Grand Final day</li>
+          <li>Post-event performance report</li>
+          <li>First right to renew</li>
+        </ul>
+        <a class="btn ghost noprint" href="#sponsorForm" data-pkg="Founding Gold Partner">Request the Gold package</a>
+      </article>
+      <article class="ticket">
+        <h3>Founding Supporting Partner</h3>
+        <div class="price">₦1,000,000</div>
+        <div class="slots">Two partners</div>
+        <div class="perf"></div>
+        <p class="best">For a brand that wants to back grassroots football and reach the community.</p>
+        <ul>
+          <li>Official Supporting Partner designation</li>
+          <li>Logo on website, posters and social content</li>
+          <li>Brand mention in selected highlights</li>
+          <li>Post-event performance report</li>
+          <li>First right to renew</li>
+        </ul>
+        <a class="btn ghost noprint" href="#sponsorForm" data-pkg="Founding Supporting Partner">Request the Supporting package</a>
+      </article>
+    </div>
+    <p class="note">Benefits shown are the proposed inventory and are confirmed in each partner's written agreement.</p>
+
+    <div class="partners-extra">
+      <div>
+        <h3 class="sub-h">Also looking for</h3>
+        <div class="tags"><span>Venue partner</span><span>Media partner</span><span>Medical partner</span><span>Sportswear partner</span></div>
+        <p style="color:var(--mute);margin-top:20px">Partners who provide services instead of cash are recognised as official partners of the championship.</p>
+      </div>
+      <div>
+        <h3 class="sub-h">What we report back</h3>
+        <div class="metrics">
+          <div>Video views</div><div>Audience reach</div>
+          <div>Attendance</div><div>Engagement</div>
+          <div>Brand exposure</div><div>Event participation</div>
+        </div>
+        <p style="color:var(--mute);margin-top:20px">Every partner receives a post-event report, so you can see what your investment delivered.</p>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:80px">
+      <div>
+        <h3 class="sub-h">Start a partnership conversation</h3>
+        <p style="color:var(--mute);max-width:46ch">Tell us who you are and what you are interested in. We will reply with the full sponsorship proposal and a benefits inventory.</p>
+        <div class="actions noprint"><button class="btn ghost" id="printBtn" type="button">Save proposal as PDF</button></div>
+      </div>
+      <div class="formbox noprint" id="sponsorForm" style="scroll-margin-top:80px">
+        <h3>Partner enquiry</h3>
+        <form id="sponsorFormEl" novalidate>
+          <div class="g2">
+            <div class="field"><label for="s-co">Company</label><input id="s-co" name="company" required autocomplete="organization"></div>
+            <div class="field"><label for="s-name">Contact person</label><input id="s-name" name="name" required autocomplete="name"></div>
+          </div>
+          <div class="g2">
+            <div class="field"><label for="s-phone">WhatsApp number</label><input id="s-phone" name="phone" type="tel" inputmode="tel" required pattern="^(\+?234|0)[789][01]\d{8}$" title="Enter a valid Nigerian phone number" autocomplete="tel"></div>
+            <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="s-pkg">I am interested in</label>
+            <select id="s-pkg" name="package" required>
+              <option value="">Select</option>
+              <option>Founding Title Partner</option>
+              <option>Founding Gold Partner</option>
+              <option>Founding Supporting Partner</option>
+              <option>Venue partnership</option>
+              <option>Media partnership</option>
+              <option>Medical partnership</option>
+              <option>Sportswear partnership</option>
+              <option>Advertising with BLVCKCARDINAL Media</option>
+            </select></div>
+          <div class="field"><label for="s-msg">Message (optional)</label><textarea id="s-msg" name="message"></textarea></div>
+          <button class="btn" type="submit">Send enquiry</button>
+        </form>
+        <div class="result" id="sponsorOut" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="head"><h2>Questions, answered.</h2></div>
+    <div class="faq">
+      <details><summary>Who can enter a team?</summary><p>Grassroots teams from Lagos can register. Squad limits, age rules and eligibility are published in the tournament rules when registration opens.</p></details>
+      <details><summary>How does a team qualify?</summary><p>Registered teams play qualifiers. The teams that qualify enter the draw and the group stage in September.</p></details>
+      <details><summary>Is there an entry fee?</summary><p>Registration fees, if any, are announced when registration opens. Nothing is collected through this website.</p></details>
+      <details><summary>Where is the Grand Final held?</summary><p>The venue is announced with the confirmed schedule. It will host the final on October 1st.</p></details>
+      <details><summary>Can players under 18 take part?</summary><p>Yes, with a parent or guardian's permission. Players under 18 are covered by our safeguarding rules in the tournament handbook.</p></details>
+      <details><summary>How do players get noticed by clubs?</summary><p>Matches are recorded and player profiles are shared with clubs and academies in our network. Introductions are never a guarantee of a trial or signing.</p></details>
+      <details><summary>How do companies become partners?</summary><p>Choose a package or a service partnership above and send an enquiry. We reply with the full proposal, benefits inventory and agreement.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <h2>One stage. One dream. One champion.</h2>
+    <p class="lede">Register a team, introduce a player or partner with the championship. Tap a channel below to message us directly.</p>
+    <div class="chans">
+      <a class="chan" id="waGeneral" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path class="fill" d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/></svg><span><b>WhatsApp</b><small>0906 622 4177</small></span></a>
+      <a class="chan" id="igLink" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.2" cy="6.8" r="1"/></svg><span><b>Instagram</b><small>@blvckcardinal</small></span></a>
+      <a class="chan" id="mailLink" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><b>Email</b><small>blvckcardinal1@gmail.com</small></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--bone);font-family:var(--serif);font-size:1.1rem">BLVCKCARDINAL Football</strong><br>
+      A BLVCKCARDINAL Lifestyle Hub property. Lagos, Nigeria.<br>
+      &copy; <span id="yr"></span> BLVCKCARDINAL. All rights reserved.
+    </div>
+    <div class="flinks"><a class="ficon" id="fWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path class="fill" d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/></svg></a><a class="ficon" id="fIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.2" cy="6.8" r="1"/></svg></a><a class="ficon" id="fMail" href="#" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a><a href="#championship">Championship</a><a href="#teams">Teams</a><a href="#players">Players</a><a href="#partners">Partners</a><a href="#faq">FAQ</a></div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn" href="#teams">Register team</a>
+  <a class="btn ghost" href="#partners">Partner with us</a>
+</div>
+
+<script>
+/* ========= CONFIG: edit these ========= */
+const CONFIG = {
+  whatsapp: "2349066224177",   // WhatsApp number, international format, no +
+  email: "blvckcardinal1@gmail.com",
+  instagram: "blvckcardinal",
+  ga4: "",                     // e.g. G-XXXXXXXXXX
+  pixel: ""                    // Meta Pixel ID
+};
+/* ====================================== */
+
+const waReady = /^\d{11,15}$/.test(CONFIG.whatsapp);
+const waLink = (msg) => `https://wa.me/${waReady ? CONFIG.whatsapp : ""}?text=${encodeURIComponent(msg)}`;
+
+/* Analytics (loads only when IDs are set) */
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+if (CONFIG.ga4) {
+  const s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.ga4; document.head.appendChild(s);
+  gtag('js', new Date()); gtag('config', CONFIG.ga4);
+}
+if (CONFIG.pixel) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.pixel); fbq('track', 'PageView');
+}
+const track = (name, params = {}) => {
+  if (CONFIG.ga4) gtag('event', name, params);
+  if (CONFIG.pixel && window.fbq) fbq('trackCustom', name, params);
+};
+
+/* Mobile menu */
+const menuBtn = document.getElementById('menuBtn'), nav = document.getElementById('nav');
+menuBtn.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+nav.addEventListener('click', e => { if (e.target.closest('a')) { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); } });
+
+/* Countdown to the next October 1st Grand Final (West Africa Time) */
+const wat = (y, m, d) => new Date(`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}T00:00:00+01:00`);
+function nextFinal() {
+  const now = new Date(); let y = now.getFullYear();
+  if (now >= wat(y, 10, 2)) y++;
+  return { year: y, start: wat(y, 10, 1) };
+}
+const FINAL = nextFinal();
+const pad = n => String(n).padStart(2, '0');
+function tick() {
+  const diff = FINAL.start - new Date();
+  const cap = document.getElementById('cdCap');
+  if (diff <= 0) {
+    ['d','h','m','s'].forEach(k => document.getElementById('cd-' + k).textContent = '00');
+    cap.textContent = `Today is the ${FINAL.year} Grand Final`; return;
+  }
+  const s = Math.floor(diff / 1000);
+  document.getElementById('cd-d').textContent = pad(Math.floor(s / 86400));
+  document.getElementById('cd-h').textContent = pad(Math.floor(s % 86400 / 3600));
+  document.getElementById('cd-m').textContent = pad(Math.floor(s % 3600 / 60));
+  document.getElementById('cd-s').textContent = pad(s % 60);
+  cap.textContent = `Until the ${FINAL.year} Grand Final on October 1st`;
+}
+tick(); setInterval(tick, 1000);
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* Structured data for search engines */
+const ld = document.createElement('script'); ld.type = 'application/ld+json';
+ld.textContent = JSON.stringify({
+  "@context": "https://schema.org", "@type": "SportsEvent",
+  "name": `BLVCKCARDINAL Football ${FINAL.year}`,
+  "description": "Annual grassroots five-a-side football championship in Lagos, Nigeria.",
+  "startDate": `${FINAL.year}-09-01`, "endDate": `${FINAL.year}-10-01`,
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": { "@type": "Place", "name": "Lagos, Nigeria", "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" } },
+  "organizer": { "@type": "Organization", "name": "BLVCKCARDINAL" }
+});
+document.head.appendChild(ld);
+
+/* Contact buttons: one tap opens the chat, DM or email */
+const igDM = 'https://ig.me/m/' + CONFIG.instagram;
+const mailTo = 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent('BLVCKCARDINAL Football enquiry');
+document.getElementById('waGeneral').href = waLink("Hello BLVCKCARDINAL Football, I'd like to find out more about the championship.");
+document.getElementById('igLink').href = igDM;
+document.getElementById('mailLink').href = mailTo;
+document.getElementById('fWa').href = waLink("Hello BLVCKCARDINAL Football!");
+document.getElementById('fIg').href = igDM;
+document.getElementById('fMail').href = mailTo;
+
+/* Forms: validate, build a WhatsApp message, show a confirmation panel */
+function wireForm(formId, outId, title, build, eventName) {
+  const form = document.getElementById(formId), out = document.getElementById(outId);
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const data = Object.fromEntries(new FormData(form));
+    const msg = build(data);
+    out.replaceChildren();
+    const h = document.createElement('h4'); h.textContent = title;
+    const pre = document.createElement('pre'); pre.textContent = msg;
+    const row = document.createElement('div'); row.className = 'actions';
+    const send = document.createElement('a'); send.className = 'btn'; send.target = '_blank'; send.rel = 'noopener';
+    send.href = waLink(msg); send.textContent = 'Send on WhatsApp';
+    const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'btn ghost'; copy.textContent = 'Copy details';
+    copy.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(msg); copy.textContent = 'Copied'; } catch { copy.textContent = 'Press and hold the text to copy'; }
+    });
+    row.append(send, copy); out.append(h, pre, row);
+    out.classList.add('show'); out.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    track(eventName, { form: formId });
+  });
+}
+
+wireForm('teamForm', 'teamOut', 'Almost done. Send this to confirm your place.', d =>
+`TEAM REGISTRATION: BLVCKCARDINAL Football ${FINAL.year}
+Team: ${d.team}
+Area: ${d.area}
+Captain: ${d.captain}
+WhatsApp: ${d.phone}
+Squad size: ${d.size}
+Kit colours: ${d.kit || 'Not provided'}
+Email: ${d.email || 'Not provided'}
+Permission confirmed for all players: Yes`, 'team_registration');
+
+wireForm('playerForm', 'playerOut', 'Profile ready. Send it to join the Talent Network.', d =>
+`PLAYER PROFILE: BLVCKCARDINAL Talent Network
+Name: ${d.name}
+Age: ${d.age}
+Position: ${d.position}
+Area: ${d.area}
+Current team: ${d.team || 'None'}
+WhatsApp: ${d.phone}
+Highlights: ${d.clip || 'Not provided'}
+Age or guardian permission confirmed: Yes`, 'player_profile');
+
+wireForm('sponsorFormEl', 'sponsorOut', 'Enquiry ready. Send it and we will reply with the proposal.', d =>
+`PARTNER ENQUIRY: BLVCKCARDINAL Football ${FINAL.year}
+Company: ${d.company}
+Contact: ${d.name}
+WhatsApp: ${d.phone}
+Email: ${d.email}
+Interested in: ${d.package}
+Message: ${d.message || 'None'}`, 'partner_enquiry');
+
+/* Package buttons preselect the enquiry form */
+document.querySelectorAll('[data-pkg]').forEach(a => a.addEventListener('click', () => {
+  document.getElementById('s-pkg').value = a.dataset.pkg;
+  track('package_click', { package: a.dataset.pkg });
+}));
+
+/* Save the partners section as a PDF via the print dialog */
+document.getElementById('printBtn').addEventListener('click', () => {
+  document.body.classList.add('print-proposal');
+  window.print();
+  setTimeout(() => document.body.classList.remove('print-proposal'), 500);
+  track('proposal_pdf');
+});
+</script>
+</body>
+</html>
